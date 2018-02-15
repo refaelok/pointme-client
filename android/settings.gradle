@@ -1,0 +1,3 @@
+rootProject.name = 'pointme-client'
+
+include ':app'
