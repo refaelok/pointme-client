@@ -1,4 +1,4 @@
-package com.pointme-client;
+package com.pointme_client;
 
 import android.app.Application;
 

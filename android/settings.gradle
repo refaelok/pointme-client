@@ -1,3 +1,3 @@
-rootProject.name = 'pointme-client'
+rootProject.name = 'pointme_client'
 
 include ':app'
