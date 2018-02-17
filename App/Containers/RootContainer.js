@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import {Text, View, StatusBar} from 'react-native';
+import {View, StatusBar} from 'react-native';
+import {ThemeProvider } from 'react-native-material-ui';
 import ReduxNavigation from '../Navigation/ReduxNavigation';
 import {connect} from 'react-redux';
 import StartupActions from '../Redux/StartupRedux';
@@ -14,10 +15,12 @@ class RootContainer extends Component {
 
     render() {
         return (
-            <View style={styles.applicationView}>
-                <StatusBar barStyle='light-content' />
-                <ReduxNavigation />
-            </View>
+            <ThemeProvider uiTheme={styles.uiTheme}>
+                <View style={styles.applicationView}>
+                    <StatusBar barStyle='light-content' />
+                    <ReduxNavigation />
+                </View>
+            </ThemeProvider>
         );
     }
 }
