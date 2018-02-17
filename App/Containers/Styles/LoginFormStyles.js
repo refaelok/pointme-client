@@ -1,15 +1,23 @@
 import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
-    input:{
-        width: '100%',
-        height: 40,
-        backgroundColor: 'rgba(225,225,225,0.2)',
-        marginBottom: 10,
-        padding: 10,
-        color: '#fff'
+    container: {
+        flex: 1,
+        flexDirection: 'column',
     },
-    button: {
-        width: '100%'
+    logo: {
+        flexGrow: 1,
+    },
+    loginForm: {
+        flexShrink: 1,
+        padding: 20,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    submitButton: {
+        container: {
+            width: '100%',
+            paddingVertical: 20
+        }
     }
 });

@@ -1,7 +1,12 @@
 import {COLOR} from 'react-native-material-ui';
 
 const colors = {
-    background: '#1F0808',
+    background: '#212f3f',
+    uiTheme: {
+        palette: {
+            primaryColor: COLOR.green500,
+        }
+    },
     Input: {
         Text: '#fff',
         Placeholder: '#e1e1e1b3',
