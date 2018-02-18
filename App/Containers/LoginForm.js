@@ -23,14 +23,13 @@ export default class LoginForm extends Component {
                     <Input placeholder="Password" secureTextEntry />
 
                     <Button
-                        style={styles.submitButton}
+                        style={{container: styles.submitButton}}
                         text="Login"
                         raised
                         primary
                     />
                 </View>
             </View>
-
         );
     }
 }

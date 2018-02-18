@@ -5,7 +5,15 @@
     "env": {
         "production": {
             "plugins": [
-                "ignite-ignore-reactotron"
+                "ignite-ignore-reactotron",
+                "transform-decorators-legacy",
+                "syntax-decorators"
+            ]
+        },
+        "development": {
+            "plugins": [
+                "transform-decorators-legacy",
+                "syntax-decorators"
             ]
         }
     }

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import {
     TextInput
 } from 'react-native';
@@ -7,16 +8,30 @@ import {
 import styles from '../Styles/InputStyles';
 import Colors from '../../Themes/Colors';
 
-export default class Input extends Component {
+const propTypes = {
+    placeholder: PropTypes.string,
+    secureTextEntry: PropTypes.bool
+};
+
+const defaultProps = {
+    placeholder: '',
+    secureTextEntry: false
+};
+
+class Input extends Component {
     render() {
         return (
                 <TextInput
                     style={styles.input}
                     placeholder={this.props.placeholder}
+                    secureTextEntry={this.props.secureTextEntry}
                     placeholderTextColor={Colors.Input.Placeholder}
                     underlineColorAndroid={Colors.transparent}
-                    secureTextEntry={this.props.secureTextEntry}
                 />
         );
     }
 }
+Input.propTypes = propTypes;
+Input.defaultProps = defaultProps;
+
+export default Input;

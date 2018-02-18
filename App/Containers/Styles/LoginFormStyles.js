@@ -15,9 +15,7 @@ export default StyleSheet.create({
         justifyContent: 'center',
     },
     submitButton: {
-        container: {
-            width: '100%',
-            paddingVertical: 20
-        }
+        width: '100%',
+        paddingVertical: 20
     }
 });
