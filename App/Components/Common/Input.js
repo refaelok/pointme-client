@@ -10,10 +10,14 @@ import Colors from '../../Themes/Colors';
 
 const propTypes = {
     placeholder: PropTypes.string,
+    value: PropTypes.string,
+    onChangeText: PropTypes.func,
     secureTextEntry: PropTypes.bool
 };
 
 const defaultProps = {
+    value: null,
+    onChangeText: null,
     placeholder: '',
     secureTextEntry: false
 };
@@ -23,6 +27,8 @@ class Input extends Component {
         return (
                 <TextInput
                     style={styles.input}
+                    onChangeText={this.props.onChangeText}
+                    value={this.props.value}
                     placeholder={this.props.placeholder}
                     secureTextEntry={this.props.secureTextEntry}
                     placeholderTextColor={Colors.Input.Placeholder}

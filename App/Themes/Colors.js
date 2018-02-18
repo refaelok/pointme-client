@@ -1,7 +1,8 @@
 import {COLOR} from 'react-native-material-ui';
 
 const colors = {
-    background: '#212f3f',
+    appBackground: '#212f3f',
+    appText: '#fff',
     uiTheme: {
         palette: {
             primaryColor: COLOR.green500,

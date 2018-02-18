@@ -1,13 +1,13 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
-    View
+    View,
+    ScrollView
 } from 'react-native';
-import {
-    Button
-} from 'react-native-material-ui';
 
 import {
-    Input
+    Input,
+    PrimaryButton,
+    Text1
 } from '../Components/Common';
 
 // Styles
@@ -17,18 +17,20 @@ export default class LoginForm extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <View style={styles.logo} />
-                <View style={styles.loginForm}>
-                    <Input placeholder="Email" />
-                    <Input placeholder="Password" secureTextEntry />
+                <ScrollView contentContainerStyle={{flexGrow: 1}}>
+                    <View style={styles.logo} />
+                    <View style={styles.loginForm}>
+                        <Input placeholder="Email" />
+                        <Input placeholder="Password" secureTextEntry />
 
-                    <Button
-                        style={{container: styles.submitButton}}
-                        text="Login"
-                        raised
-                        primary
-                    />
-                </View>
+                        <PrimaryButton text="Log In" />
+
+                        <Text1 text="OR" />
+
+                        <PrimaryButton text="Sign in with Facebook" />
+                        <PrimaryButton text="Sign in with Google" />
+                    </View>
+                </ScrollView>
             </View>
         );
     }

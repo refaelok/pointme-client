@@ -9,11 +9,7 @@ import Container from '../../SDK/Container';
 // Styles
 import styles from '../Styles/LaunchScreenStyles';
 
-@Container({
-    toolbar: {
-        centerElement: 'Login'
-    }
-})
+@Container({})
 export default class LaunchScreen extends Component {
     render() {
         return (

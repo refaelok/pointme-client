@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import Colors from '../../Themes/Colors';
+import {Colors, Metrics} from '../../Themes';
 
 const styles = StyleSheet.create({
     applicationView: {
@@ -13,7 +13,7 @@ const uiTheme = {
     },
     toolbar: {
         container: {
-            height: 50,
+            height: Metrics.navBarHeight,
         },
     },
 };

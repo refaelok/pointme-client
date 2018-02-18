@@ -1,13 +1,14 @@
 import {StyleSheet} from 'react-native';
-import Colors from '../../Themes/Colors';
+import {Colors, Metrics, Fonts} from '../../Themes';
 
 export default StyleSheet.create({
     input:{
         width: '100%',
-        height: 40,
+        height: Metrics.buttonHeight,
         backgroundColor: Colors.Input.Background,
-        marginBottom: 10,
-        padding: 10,
-        color: Colors.Input.Text
+        marginBottom: Metrics.baseMargin,
+        fontSize: Fonts.size.input,
+        color: Colors.Input.Text,
+        paddingLeft: 10
     }
 });
