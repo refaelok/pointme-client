@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {
     Button
@@ -20,7 +20,7 @@ class PrimaryButton extends Component {
     render() {
         return (
             <Button
-                style={{container: styles.submitButton, text: styles.submitButtonText}}
+                style={{ container: styles.submitButton, text: styles.submitButtonText }}
                 text={this.props.text}
                 upperCase={false}
                 raised

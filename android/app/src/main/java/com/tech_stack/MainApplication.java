@@ -1,4 +1,4 @@
-package com.pointme_client;
+package com.iClimb_client;
 
 import android.app.Application;
 

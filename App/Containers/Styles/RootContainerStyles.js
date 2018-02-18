@@ -1,10 +1,10 @@
-import {StyleSheet} from 'react-native';
-import {Colors, Metrics} from '../../Themes';
+import { StyleSheet } from 'react-native';
+import { Colors, Metrics } from '../../Themes';
 
 const styles = StyleSheet.create({
     applicationView: {
-        flex: 1
-    }
+        flex: 1,
+    },
 });
 
 const uiTheme = {
@@ -18,4 +18,4 @@ const uiTheme = {
     },
 };
 
-export default {...styles, uiTheme}
+export default { ...styles, uiTheme };

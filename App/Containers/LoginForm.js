@@ -17,7 +17,7 @@ export default class LoginForm extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <ScrollView contentContainerStyle={{flexGrow: 1}}>
+                <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
                     <View style={styles.logo} />
                     <View style={styles.loginForm}>
                         <Input placeholder="Email" />
