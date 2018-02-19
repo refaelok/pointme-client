@@ -7,6 +7,7 @@ import {
 import {
     Input,
     PrimaryButton,
+    IconButton,
     Text1
 } from '../Components/Common';
 
@@ -27,8 +28,16 @@ export default class LoginForm extends Component {
 
                         <Text1 text="OR" />
 
-                        <PrimaryButton text="Sign in with Facebook" />
-                        <PrimaryButton text="Sign in with Google" />
+                        <IconButton
+                            text="Sign in with Facebook"
+                            icon="facebook-f"
+                            style={{ container: { backgroundColor: '#3b5998' } }}
+                        />
+                        <IconButton
+                            text="Sign in with Google"
+                            icon="google"
+                            style={{ container: { backgroundColor: '#dc4e41' } }}
+                        />
                     </View>
                 </ScrollView>
             </View>

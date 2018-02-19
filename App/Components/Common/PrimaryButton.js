@@ -4,6 +4,7 @@ import {
     Button
 } from 'react-native-material-ui';
 
+
 // styles
 import styles from '../Styles/PrimaryButtonStyles';
 
@@ -20,7 +21,10 @@ class PrimaryButton extends Component {
     render() {
         return (
             <Button
-                style={{ container: styles.submitButton, text: styles.submitButtonText }}
+                style={{
+                    container: styles.submitButton,
+                    text: styles.submitButtonText
+                }}
                 text={this.props.text}
                 upperCase={false}
                 raised
